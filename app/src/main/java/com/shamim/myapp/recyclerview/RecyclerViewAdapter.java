@@ -46,9 +46,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             public void onClick(View v) {
 
 
-                if(position==0){
+               /* if(position==0){
                     Intent intent = new Intent(mContext, Book_Activity.class);
-                    String des = "hello";
+                    String des = "hello bangladesh";
                     // passing data to the book activity
                     intent.putExtra("Title", mData.get(position).getTitle());
                     intent.putExtra("hello",des);
@@ -57,7 +57,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     // start the activity
                     mContext.startActivity(intent);
                 }
-               /* Intent intent = new Intent(mContext, Book_Activity.class);
+                if(position==1){
+                    Intent intent = new Intent(mContext, Book_Activity.class);
+                    String des = "hello bangladesh2";
+                    // passing data to the book activity
+                    intent.putExtra("Title", mData.get(position).getTitle());
+                    intent.putExtra("hello",des);
+                    //intent.putExtra("Description", mData.get(position).getDescription());
+                    intent.putExtra("Thumbnail", mData.get(position).getThumbnail());
+                    // start the activity
+                    mContext.startActivity(intent);
+                }*/
+               Intent intent = new Intent(mContext, Book_Activity.class);
                 String des = "hello";
                 // passing data to the book activity
                 intent.putExtra("Title", mData.get(position).getTitle());
@@ -65,7 +76,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 //intent.putExtra("Description", mData.get(position).getDescription());
                 intent.putExtra("Thumbnail", mData.get(position).getThumbnail());
                 // start the activity
-                mContext.startActivity(intent);*/
+                mContext.startActivity(intent);
 
             }
         });

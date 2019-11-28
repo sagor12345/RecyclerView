@@ -34,6 +34,5 @@ public class Book_Activity extends AppCompatActivity {
         tvdescription.setText(des);
         img.setImageResource(image);
 
-
     }
 }
